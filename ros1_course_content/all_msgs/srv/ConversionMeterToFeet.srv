@@ -1,0 +1,6 @@
+# This custom service type is used to convert the units from meters to feet
+
+float64 distance_meters            # Request message: distance in meters
+---
+float64 distance_feets             # Response message: distance in feets
+bool success                       # bool output to tell whether req is processed successfully or not
