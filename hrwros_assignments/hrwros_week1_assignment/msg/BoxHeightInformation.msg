@@ -1,0 +1,1 @@
+float64 box_height      #variable to capture the height of the box
