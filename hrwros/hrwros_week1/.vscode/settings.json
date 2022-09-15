@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/race-alone/ros1_ws/devel/lib/python3/dist-packages",
+        "/home/race-alone/ros101/devel/lib/python3/dist-packages",
+        "/home/race-alone/catkin_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/race-alone/ros1_ws/devel/lib/python3/dist-packages",
+        "/home/race-alone/ros101/devel/lib/python3/dist-packages",
+        "/home/race-alone/catkin_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}
