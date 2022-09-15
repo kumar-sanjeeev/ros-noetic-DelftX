@@ -1,8 +1,4 @@
-#! /usr/bin/env python3
 
-# This code has been adapted from the ROS Wiki actionlib tutorials
-# to the context of this course.
-# (http://wiki.ros.org/hrwros_msgs/Tutorials)
 
 import rospy
 
@@ -41,8 +37,8 @@ class CounterWithDelayActionClass(object):
         #  Assignment 3 - Part3                                             #
         #  modify counter delay using "counter_delay" a private parameter.  #
 
-        if rospy.has_param("<write your code here>"):
-            counter_delay_value = rospy.get_param("<write your code here>")
+        if rospy.has_param("counter_delay"):
+            counter_delay_value = rospy.get_param("~counter_delay")
             rospy.loginfo("Parameter found on the parameter server "
                           " Using %.1fs for counter delay." %
                           (counter_delay_value))
