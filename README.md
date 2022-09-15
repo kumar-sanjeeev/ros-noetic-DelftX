@@ -27,9 +27,15 @@ This repository contains all the ROS pkgs that I am developing during learning R
 - **`ros1_course_content`** contains all ros pkgs that I developed during following this course. Basic purpose is to implement all the stuff taught in the     course, to get better understanding of code and learning debugging.
 
 
-
-
-
-
 ![image](https://user-images.githubusercontent.com/62834697/190458690-d9badd1b-da90-42da-acb1-baa92753d5db.png)
+
+
+## Environment Setup:
+**If ROS-Noetic is not installed** [follow this](http://wiki.ros.org/noetic/Installation/Ubuntu)
+
+`If ROS-Noetic Version already installed in the system` : Run the following commands in the linux terminal to setup the ros workspace with turtlebot3 packages.
+```shell
+$ cd ~/catkin_ws/src             # will only run if catkin_ws is available at root directory
+$ git git@github.com:kumar-sanjeeev/ros-noetic-DelftX.git
+$ cd ~/catkin_ws && catkin_make  # to build ros packages
 
