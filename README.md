@@ -24,7 +24,7 @@ This repository contains all the ROS pkgs that I am developing during learning R
 - **`hrwros`** is the top level folder that contains ros pkgs inside it
 - **`hrwros_assignments`** is the another top level folder that contains ros pkgs for weekly based assignments
 - **`hrwros_utilities`** is the ros pkgs for useful functions
-- **`ros1_course_content`** contains all ros pkgs that I developed during following this course. Basic purpose is to implement all the stuff taught in the     course, to get better understanding of code and also the importance of debugging
+- **`ros1_course_content`** contains all ros pkgs that I developed during following this course. Basic purpose is to implement all the stuff taught in the     course, to get better understanding of code and learning debugging.
 
 
 
