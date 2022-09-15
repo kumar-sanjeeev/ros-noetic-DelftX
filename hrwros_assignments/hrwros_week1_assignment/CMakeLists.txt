@@ -33,6 +33,6 @@ include_directories(
 )
 
 catkin_install_python(PROGRAMS
-  scripts/week1_assignment1_part3.py
+  scripts/week1_assignment2.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
