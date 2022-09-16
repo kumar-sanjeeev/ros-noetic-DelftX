@@ -38,4 +38,10 @@ This repository contains all the ROS pkgs that I am developing during learning R
 $ cd ~/catkin_ws/src             # will only run if catkin_ws is available at root directory
 $ git git@github.com:kumar-sanjeeev/ros-noetic-DelftX.git
 $ cd ~/catkin_ws && catkin_make  # to build ros packages
+```
+## Weekly assignment Solutions
+- Week1 assignmnet
+- Week2 assignment
+- Week 3 assignment
+
 
