@@ -112,3 +112,62 @@
   
       ![image](https://user-images.githubusercontent.com/62834697/190739225-f9143bad-8d89-4fc9-8420-3f76d24c59fc.png)
 
+# Week3 assignment
+
+- ## week3_assignment 1:
+   * **`Task Description`**: 
+      * Visualize the robot in the factory 
+      * Provide a good estimation of the robot's initial position
+      * Improve quality of localization with the AMCL(Adaptive Monte Carlo Localization)algorithm
+      
+     ![crop_ass1_gazebo](https://user-images.githubusercontent.com/62834697/191616113-d19c8a19-347e-4734-968c-1d2194c10b8e.png)     ![crop1_ass1_rviz](https://user-images.githubusercontent.com/62834697/191616797-65bc599b-83b2-464a-b53d-c9372ea261f6.png)
+
+
+
+
+      
+   * **`Solution`** :
+      * Step 2: set the correct file location of the map in the `"amcl_navigation.launch"`
+      * Step 1: correct the initial position of the robot in the map `"amcl_navigation.launch"`
+      
+        ```xml
+          <launch>
+            <!-- Map server -->
+            <arg name="map_file" default="$(find hrwros_week3)/config/map_factory_v1.yaml"/>  <!-- Set correct map file -->
+            <arg name="3d_sensor" default="$(env TURTLEBOT_3D_SENSOR)"/>  <!-- r200, kinect, asus_xtion_pro -->
+
+            <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+            <!-- Localization -->
+            <!-- Assigment 1 Part 2 -->
+            <arg name="initial_pose_x" default="-3.999279"/>  <!-- Set correct initial pose x -->
+            <arg name="initial_pose_y" default="-0.1999075"/>  <!-- Set correct initial pose y -->
+            <arg name="initial_pose_a" default="0.0"/>  <!-- Set correct initial angle  -->
+            <arg name="custom_amcl_launch_file" default="$(find turtlebot_navigation)/launch/includes/amcl/$(arg 3d_sensor)_amcl.launch.xml"/>
+
+            <include file="$(arg custom_amcl_launch_file)">
+              <arg name="initial_pose_x" value="$(arg initial_pose_x)"/>
+              <arg name="initial_pose_y" value="$(arg initial_pose_y)"/>
+              <arg name="initial_pose_a" value="$(arg initial_pose_a)"/>
+            </include>
+
+            <!-- Move base -->
+           <include file="$(find turtlebot_navigation)/launch/includes/move_base.launch.xml"/>
+        </launch>  
+        ```
+      * Step 2: run the following commands in the terminal
+        ```shell
+        $ source ~/hrwros_ws/devel/setup.bash                                      # source the hrwros_ws
+        $ roslaunch hrwros_week3 hrwros_turtlebot_navigation.launch                # launch the factory simulation
+        $ roslaunch hrwros_week3_assignment amcl_navigation.launch                 # launch the rviz simulation with correct robot location 
+        ```
+  
+    * `Result` : 
+  
+      ![git_rviz2](https://user-images.githubusercontent.com/62834697/191618072-563a7f26-993e-4dc0-a503-10a092d4bebc.png)
+
+
+
+
+  
+  
