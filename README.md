@@ -42,6 +42,6 @@ $ cd ~/catkin_ws && catkin_make  # to build ros packages
 ## Weekly assignment Solutions
 - [Week1 assignmnet](hrwros_assignments/README.md)
 - [Week2 assignment](hrwros_assignments/README.md)
-- [Week 3 assignment](hrwros_assignments/README.md)
+- [Week3 assignment](hrwros_assignments/README.md)
 
 
