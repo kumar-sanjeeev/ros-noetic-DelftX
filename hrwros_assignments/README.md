@@ -178,6 +178,30 @@
   
       ![git_rviz2](https://user-images.githubusercontent.com/62834697/191618072-563a7f26-993e-4dc0-a503-10a092d4bebc.png)
 
+- ## week3_assignment 2 and 3:
+   * **`Task Description`**: 
+      * Pathing-Knowing where your robot is going ( See the ful path planned by toward the goal)
+      * Command navigation goal to the turtlebot using a ROS Node i.e implements a simple action client interface that can send the goals to the move_base action server.
+      
+      
+   * **`Solution`** :
+      * update the first goal in`"week3_assignment3_part1.py"
+      * update the second goal in`"week3_assignment3_part2.py"
+      * update the "week3_assignment3_part1.launch and week3_assignment3_part2.launch"
+
+      * Step 2: run the following commands in the terminal
+        ```shell
+        $ source ~/hrwros_ws/devel/setup.bash                                      # source the hrwros_ws
+        $ roslaunch hrwros_week3 hrwros_turtlebot_navigation.launch                # launch the factory simulation
+        $ roslaunch hrwros_week3_assignment amcl_navigation.launch                 # launch the rviz simulation with correct robot location 
+        $ roslaunch hrwros_week3_assignment week3_assignment3_part1.launch         # for giving the target goal to the turtlebot
+        ```
+  
+    * `Result` : 
+  
+      [final.webm](https://user-images.githubusercontent.com/62834697/191841267-27cdd0a2-b918-422f-a3d0-411a406969ea.webm)
+
+
 
 
 
